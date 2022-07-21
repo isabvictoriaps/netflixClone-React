@@ -65,7 +65,7 @@ export default () => {
 
       <footer>
 
-        Feito com <span role="img"  aria-label="coração">❤️‍🔥</span> por Giovanna Gomes |
+        Feito com <span role="img"  aria-label="coração">❤️‍🔥</span> por Giovanna Gomes, Isabelle Victoria e Max Henrique |
 
         Direitos de imagem para Netflix |
 
@@ -73,6 +73,11 @@ export default () => {
 
       </footer>
 
+      {movieList.length <= 0 &&
+      <div className='loading'>
+        <img src='https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif' alt='Carregando' />
+      </div>
+      }
     </div>
   );
 }
